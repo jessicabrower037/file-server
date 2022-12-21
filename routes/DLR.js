@@ -5,8 +5,8 @@ function dynamicallyLoadRoutes(app) {
  files.forEach((file) => {
     if (
         file === "DLR.js" ||
-        file.substr(file.lastIndexOf(".") + 1 !== "js"
-    )) {
+        file.substr(file.lastIndexOf(".") + 1) !== "js"
+    ) {
         return;
     }
     let filename = file.substr(0, file.indexOf("."));

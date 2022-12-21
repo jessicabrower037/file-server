@@ -10,7 +10,6 @@ function brew(app) {
                 .send(responseMessage);
         }
     );
-
 }
 
 module.exports = brew;
